@@ -1,0 +1,59 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  background-color: #b9d6f1;
+  color: #4b7aa3;
+  padding: 2vw 2.8vw;
+  font-size: 1vw;
+
+  &-box {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 0 1vw;
+    gap: 1vw;
+  }
+  h2 {
+    font-size: 2.4vw;
+    font-weight: bold;
+    color: #0a3e6c;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6vw;
+    gap: 1vw;
+    width: 100%;
+  }
+  &-icon {
+    width: 1.4vw;
+    object-fit: contain;
+  }
+  &-arrow {
+    width: 0.8vw;
+    object-fit: contain;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    &-rotate {
+      transform: rotate(90deg);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22%;
+    gap: 1vw;
+    li {
+      display: flex;
+      padding: 0 1vw;
+      &::before {
+        content: "•";
+        margin-right: 4px;
+      }
+    }
+  }
+}

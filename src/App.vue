@@ -40,6 +40,7 @@ const formattedNow = formatCustomDate(now);
     flex: 1;
     width: 100%;
     height: 100vh;
+    margin-left: 20vw;
     overflow: auto;
     background-color: #e2f8ff;
   }
